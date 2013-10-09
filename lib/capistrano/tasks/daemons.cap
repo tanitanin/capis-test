@@ -1,0 +1,7 @@
+namespace :daemons  do |script|
+  desc "hgoehgoe"
+  task :hoge do
+    on roles(:app) do |host|
+    end
+  end
+end
