@@ -10,3 +10,8 @@ group :deploy do
   gem 'capistrano-rails', github: "capistrano/rails"
 end
 
+# Application
+group :hello do
+  gem 'daemons'
+  gem 'logger'
+end

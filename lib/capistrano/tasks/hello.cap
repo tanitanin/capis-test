@@ -1,0 +1,23 @@
+# set: filetype = ruby
+namespace :hello do |script|
+  desc 'Hello.rb start'
+  task :start do |host|
+    on roles(:app) do
+      execute :ruby, 'bin/hello.rb start'
+    end
+  end
+
+  desc 'Hello.rb stop'
+  task :stop do |host|
+    on roles(:app) do
+      execute :ruby, 'bin/hello.rb stop'
+    end
+  end
+
+  desc 'Hello.rb restart'
+  task :restart do |host|
+    on roles(:app) do
+      execute :ruby, 'bin/hello.rb restart'
+    end
+  end
+end

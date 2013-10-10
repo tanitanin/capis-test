@@ -31,7 +31,9 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    daemons (1.1.9)
     i18n (0.6.5)
+    logger (1.2.8)
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
     net-ssh (2.7.0)
@@ -52,3 +54,5 @@ DEPENDENCIES
   capistrano-bundler!
   capistrano-rails!
   capistrano-rvm!
+  daemons
+  logger
